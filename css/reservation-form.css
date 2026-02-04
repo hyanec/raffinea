@@ -1,0 +1,104 @@
+.reservation-form {
+    background: linear-gradient(135deg, #f7f9fc 0%, #e8f0f7 100%);
+    padding: 60px 20px;
+    margin-top: 100px;
+}
+
+.form-section {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    color: #1a1a1a;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #BADFDB;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #BADFDB;
+    box-shadow: 0 0 0 3px rgba(186, 223, 219, 0.1);
+}
+
+.btn-reserve {
+    background: linear-gradient(135deg, #FFA4A4 0%, #BADFDB 100%);
+    color: white;
+    border: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-reserve:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255, 164, 164, 0.3);
+    color: white;
+}
+
+.calendar-input {
+    position: relative;
+}
+
+.time-slots {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.time-slot {
+    padding: 10px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    color: #666;
+}
+
+.time-slot:hover {
+    border-color: #BADFDB;
+    background-color: #f0f9f8;
+}
+
+.time-slot.selected {
+    background: linear-gradient(135deg, #BADFDB 0%, #6BA085 100%);
+    color: white;
+    border-color: #BADFDB;
+}
+
+.info-alert {
+    background-color: #f0f9f8;
+    border-left: 4px solid #BADFDB;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}

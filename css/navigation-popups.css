@@ -1,0 +1,92 @@
+/* Soulignement actif pour les liens de navigation */
+.nav-link {
+    position: relative;
+    color: #1a1a1a !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #FFA4A4, #BADFDB);
+    transition: width 0.3s ease;
+}
+
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* Pop-up abonnement */
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: 2000;
+}
+
+.popup-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px 24px;
+    max-width: 420px;
+    width: calc(100% - 40px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transform: translateY(10px);
+    transition: transform 0.25s ease;
+}
+
+.popup-overlay.active .popup-card {
+    transform: translateY(0);
+}
+
+.popup-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.popup-message {
+    color: #666;
+    margin-bottom: 18px;
+}
+
+.popup-btn {
+    background: linear-gradient(135deg, #FFA4A4 0%, #BADFDB 100%);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    padding: 10px 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.popup-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 164, 164, 0.3);
+}
+
+section {
+    scroll-margin-top: 120px;
+}
