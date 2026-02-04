@@ -22,99 +22,11 @@
 
         <link href="css/general.css" rel="stylesheet">
         <link href="css/raffinea-custom.css" rel="stylesheet">
-        
+        <link href="css/index.css" rel="stylesheet">
+
          <link rel="preconnect" href="https://fonts.googleapis.com">
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
-
-        <style>
-            /* Soulignement actif pour les liens de navigation */
-            .nav-link {
-                position: relative;
-                color: #1a1a1a !important;
-                transition: color 0.3s ease;
-            }
-
-            .nav-link::after {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 0;
-                height: 2px;
-                background: linear-gradient(90deg, #FFA4A4, #BADFDB);
-                transition: width 0.3s ease;
-            }
-
-            .nav-link.active::after {
-                width: 100%;
-            }
-
-            .nav-link:hover::after {
-                width: 100%;
-            }
-
-            /* Pop-up abonnement */
-            .popup-overlay {
-                position: fixed;
-                inset: 0;
-                background: rgba(0, 0, 0, 0.45);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                opacity: 0;
-                visibility: hidden;
-                transition: opacity 0.25s ease, visibility 0.25s ease;
-                z-index: 2000;
-            }
-
-            .popup-overlay.active {
-                opacity: 1;
-                visibility: visible;
-            }
-
-            .popup-card {
-                background: #ffffff;
-                border-radius: 16px;
-                padding: 28px 24px;
-                max-width: 420px;
-                width: calc(100% - 40px);
-                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
-                text-align: center;
-                transform: translateY(10px);
-                transition: transform 0.25s ease;
-            }
-
-            .popup-overlay.active .popup-card {
-                transform: translateY(0);
-            }
-
-            .popup-title {
-                font-size: 1.25rem;
-                font-weight: 700;
-                color: #1a1a1a;
-                margin-bottom: 8px;
-            }
-
-            .popup-message {
-                color: #666;
-                margin-bottom: 18px;
-            }
-
-            .popup-btn {
-                background: linear-gradient(135deg, #FFA4A4 0%, #BADFDB 100%);
-                color: #fff;
-                border: none;
-                border-radius: 999px;
-                padding: 10px 22px;
-                font-weight: 600;
-                cursor: pointer;
-            }
-
-            section {
-                scroll-margin-top: 120px;
-            }
-        </style>
 
     </head>
     
@@ -482,8 +394,8 @@
                                             </small>
                                         </div>
                                         <div class="d-flex align-items-center gap-2">
-                                            <span style="font-size: 1.3rem; font-weight: 700; color: #FFA4A4;">89€</span>
-                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">127€</span>
+                                            <span style="font-size: 1.3rem; font-weight: 700; color: #FFA4A4;">89 MAD</span>
+                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">127 MAD</span>
                                             <a href="reserver.html?salon=essence&service=coloration" class="btn btn-sm ms-auto" style="background: #BADFDB; color: #1a1a1a; border: none; border-radius: 20px; padding: 6px 16px;">Réserver</a>
                                         </div>
                                     </div>
@@ -512,8 +424,8 @@
                                             </small>
                                         </div>
                                         <div class="d-flex align-items-center gap-2">
-                                            <span style="font-size: 1.3rem; font-weight: 700; color: #BADFDB;">75€</span>
-                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">100€</span>
+                                            <span style="font-size: 1.3rem; font-weight: 700; color: #BADFDB;">75 MAD</span>
+                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">100 MAD</span>
                                             <a href="reserver.html?salon=luxe&service=massage" class="btn btn-sm ms-auto" style="background: #FFA4A4; color: #ffffff; border: none; border-radius: 20px; padding: 6px 16px;">Réserver</a>
                                         </div>
                                     </div>
@@ -542,8 +454,8 @@
                                             </small>
                                         </div>
                                         <div class="d-flex align-items-center gap-2">
-                                            <span style="font-size: 1.3rem; font-weight: 700; color: #FFD700;">60€</span>
-                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">100€</span>
+                                            <span style="font-size: 1.3rem; font-weight: 700; color: #FFD700;">60 MAD</span>
+                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">100 MAD</span>
                                             <a href="reserver.html?salon=bella&service=soinvisage" class="btn btn-sm ms-auto" style="background: #BADFDB; color: #1a1a1a; border: none; border-radius: 20px; padding: 6px 16px;">Réserver</a>
                                         </div>
                                     </div>
@@ -572,8 +484,8 @@
                                             </small>
                                         </div>
                                         <div class="d-flex align-items-center gap-2">
-                                            <span style="font-size: 1.3rem; font-weight: 700; color: #FFA4A4;">49€</span>
-                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">80€</span>
+                                            <span style="font-size: 1.3rem; font-weight: 700; color: #FFA4A4;">49 MAD</span>
+                                            <span style="font-size: 0.95rem; color: #999; text-decoration: line-through;">80 MAD</span>
                                             <a href="reserver.html?salon=grace&service=manucure" class="btn btn-sm ms-auto" style="background: #BADFDB; color: #1a1a1a; border: none; border-radius: 20px; padding: 6px 16px;">Réserver</a>
                                         </div>
                                     </div>
@@ -625,7 +537,7 @@
                                         <i class="bi bi-star-fill text-warning"></i>
                                         <i class="bi bi-star-fill text-warning"></i>
                                     </div>
-                                    <p class="fst-italic text-muted">"Enfin une app qui facilite la réservation au Maroc. Simple, rapide, je recommande !"</p>
+                                    <p class="fst-italic text-muted">"Enfin une plateforme qui facilite la réservation au Maroc. Simple, rapide, je recommande !"</p>
                                     <div class="d-flex align-items-center mt-3">
                                         <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 40px; height: 40px; font-weight: 600;">YB</div>
                                         <div class="ms-3">
@@ -805,7 +717,7 @@
                                 <div class="position-absolute" style="bottom: 50px; left: -60px; width: 180px; z-index: 2;">
                                     <div class="bg-dark p-1" style="border-radius: 28px; box-shadow: 0 30px 60px rgba(0,0,0,0.3);">
                                         <div style="border-radius: 24px; overflow: hidden; background: white;">
-                                            <img src="images/image3.jpg" class="img-fluid" alt="App Mobile Raffinea">
+                                            <img src="images/image3.jpg" class="img-fluid" alt="Interface Raffinea">
                                         </div>
                                     </div>
                                 </div>
@@ -844,12 +756,12 @@
                                     <div class="accordion-item border-bottom">
                                         <h2 class="accordion-header" id="headingTwo">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="font-weight: 500; color: #2c3e50;">
-                                                Dois-je créer un compte pour réserver ?
+                                                Quels moyens de paiement sont acceptés ?
                                             </button>
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                                             <div class="accordion-body text-muted" style="font-size: 0.9rem;">
-                                                Oui, un compte gratuit est nécessaire pour réserver. Il vous permet de garder un suivi de vos rendez-vous, de recevoir des rappels et de profiter d'offres personnalisées adaptées à vos envies.
+                                                Le paiement s'effectue directement au salon après votre prestation. Raffinea ne gère aucune transaction financière, la réservation est totalement gratuite.
                                             </div>
                                         </div>
                                     </div>
@@ -862,7 +774,7 @@
                                         </h2>
                                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                                             <div class="accordion-body text-muted" style="font-size: 0.9rem;">
-                                                Bien sûr. Vous pouvez gérer vos réservations directement depuis l'application. Selon les règles du salon choisi, l'annulation ou le changement est possible facilement, sans avoir besoin d'appeler.
+                                                Oui, vous recevrez un message de rappel 24h avant votre rendez-vous avec une option d'annulation ou de modification directe par message. C'est simple et rapide.
                                             </div>
                                         </div>
                                     </div>
@@ -959,9 +871,7 @@
                                         </p>
                                     </div>
 
-                                    <div class="contact-info-footer">
-                                        <a href="#">Itinéraire</a>
-                                    </div>
+                                    
                                 </div>
 
                                 <img src="images/WorldMap.svg" class="img-fluid" alt="">
@@ -1092,183 +1002,7 @@
         <script src="js/modernizr.js"></script>
         <script src="js/custom.js"></script>
         <script src="js/raffinea-custom.js"></script>
+        <script src="js/index.js"></script>
 
-        <script>
-            // Gestion de la recherche
-            function handleSearch(event) {
-                event.preventDefault();
-                const searchQuery = document.querySelector('#searchInput') || document.querySelector('input[name="q"]');
-                if (searchQuery && searchQuery.value.trim()) {
-                    window.location.href = 'search.html?q=' + encodeURIComponent(searchQuery.value.trim());
-                    return false;
-                }
-                return false;
-            }
-
-            // Animation des mots - Section À propos
-            $(document).ready(function() {
-                const words = $('.animated-word');
-                let currentIndex = 0;
-                
-                function animateNextWord() {
-                    // Réinitialiser tous les mots
-                    words.css({
-                        'animation': 'none',
-                        'opacity': '0',
-                        'transform': 'translateY(-50px)'
-                    });
-                    
-                    // Forcer un reflow pour relancer l'animation
-                    words[currentIndex].offsetHeight;
-                    
-                    // Lancer l'animation sur le mot actuel
-                    $(words[currentIndex]).css({
-                        'animation': 'wordFall 3s ease-in-out forwards'
-                    });
-                    
-                    // Passer au mot suivant
-                    currentIndex = (currentIndex + 1) % words.length;
-                }
-                
-                // Démarrer l'animation
-                animateNextWord();
-                setInterval(animateNextWord, 3000);
-
-                // Script de défilement fluide pour tous les liens avec ancres
-                $('a[href^="#"]').on('click', function(e) {
-                    const target = $(this.getAttribute('href'));
-                    if(target.length) {
-                        e.preventDefault();
-                        $('html, body').stop().animate({
-                            scrollTop: target.offset().top - 100
-                        }, 1000);
-                        
-                        // Fermer le menu mobile si ouvert
-                        if($('.navbar-collapse').hasClass('show')) {
-                            $('.navbar-toggler').click();
-                        }
-                    }
-                });
-
-                // Détection de la section active au défilement
-                $(window).on('scroll', function() {
-                    let current = '';
-                    
-                    $('section').each(function() {
-                        let $section = $(this);
-                        let sectionTop = $section.offset().top - 150;
-                        
-                        if($(window).scrollTop() >= sectionTop) {
-                            current = $section.attr('id');
-                        }
-                    });
-                    
-                    // Supprimer la classe active de tous les liens
-                    $('.nav-link').removeClass('active');
-                    
-                    // Ajouter la classe active au lien correspondant
-                    if(current) {
-                        $('a[href="#' + current + '"]').addClass('active');
-                    }
-                });
-            });
-        
-
-        // Abonnement newsletter
-        document.addEventListener('DOMContentLoaded', function() {
-            const subscribeForm = document.getElementById('subscribeForm');
-            const popup = document.getElementById('subscribePopup');
-            const popupCloseBtn = document.getElementById('popupCloseBtn');
-
-            function closePopup() {
-                if (popup) {
-                    popup.classList.remove('active');
-                    popup.setAttribute('aria-hidden', 'true');
-                }
-            }
-
-            if (popup) {
-                popup.addEventListener('click', function(e) {
-                    if (e.target === popup) {
-                        closePopup();
-                    }
-                });
-            }
-
-            if (popupCloseBtn) {
-                popupCloseBtn.addEventListener('click', closePopup);
-            }
-
-            if (subscribeForm) {
-                subscribeForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const emailInput = document.getElementById('subscribeEmail');
-                    const emailValue = emailInput ? emailInput.value.trim() : '';
-                    if (!emailValue) {
-                        alert('Veuillez saisir une adresse e-mail valide.');
-                        return;
-                    }
-                    console.log('Nouvel abonnement:', emailValue);
-                    if (popup) {
-                        popup.classList.add('active');
-                        popup.setAttribute('aria-hidden', 'false');
-                    }
-                    subscribeForm.reset();
-                });
-            }
-        });
-
-        // Contact
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            const contactPopup = document.getElementById('contactPopup');
-            const contactPopupCloseBtn = document.getElementById('contactPopupCloseBtn');
-
-            function closeContactPopup() {
-                if (contactPopup) {
-                    contactPopup.classList.remove('active');
-                    contactPopup.setAttribute('aria-hidden', 'true');
-                }
-            }
-
-            if (contactPopup) {
-                contactPopup.addEventListener('click', function(e) {
-                    if (e.target === contactPopup) {
-                        closeContactPopup();
-                    }
-                });
-            }
-
-            if (contactPopupCloseBtn) {
-                contactPopupCloseBtn.addEventListener('click', closeContactPopup);
-            }
-
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    const fullName = document.getElementById('full-name')?.value.trim();
-                    const email = document.getElementById('email')?.value.trim();
-                    const message = document.getElementById('message')?.value.trim();
-
-                    if (!fullName || !email || !message) {
-                        alert('Veuillez remplir tous les champs.');
-                        return;
-                    }
-
-                    console.log('Message contact:', { fullName, email, message });
-
-                    if (contactPopup) {
-                        contactPopup.classList.add('active');
-                        contactPopup.setAttribute('aria-hidden', 'false');
-                    }
-
-                    contactForm.reset();
-                });
-            }
-        });
-        
-        
-        
-        </script>
     </body>
 </html>
